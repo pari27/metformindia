@@ -941,3 +941,8 @@ white-space:nowrap;
 	.client-slider img {animation:none;}
 	.client-slider img:first-child {opacity:1;}
 }
+
+/* phone header: same background picture as the desktop header */
+@media (max-width:900px) {
+	.mobile-header {background-color:#ffffff; background-image:url('../images/header-bg.png'); background-repeat:no-repeat; background-position:right center; background-size:cover;}
+}
