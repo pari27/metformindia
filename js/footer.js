@@ -40,7 +40,7 @@
 	</div>
 	<div class="footer-bottom">
 		<div class="footer-bottom-inner">
-			<span>Copyright &copy; 2011, METFORM ENGINEERS. All Rights Reserved.</span>
+			<span>Copyright &copy; ${new Date().getFullYear()}, METFORM ENGINEERS. All Rights Reserved.</span>
 			<span>Powered by <a href="http://netiapps.com/">Netiapps</a></span>
 		</div>
 	</div>
