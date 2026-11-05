@@ -1,3 +1,19 @@
+# --- Force https (LIVE SERVER ONLY) ---
+# 1. Install the SSL certificate and check that https://www.metformindia.com loads with a padlock.
+# 2. Then remove the "# " at the start of the lines below.
+# Do not switch it on locally (localhost) or before the certificate works.
+#
+# RewriteEngine On
+#
+# # Send http and non-www to https://www.metformindia.com
+# RewriteCond %{HTTPS} off [OR]
+# RewriteCond %{HTTP_HOST} !^www\. [NC]
+# RewriteRule ^ https://www.metformindia.com%{REQUEST_URI} [L,R=301]
+#
+# # /index.html -> / (matches the canonical link on the home page)
+# RewriteCond %{THE_REQUEST} \s/index\.html[\s?] [NC]
+# RewriteRule ^index\.html$ https://www.metformindia.com/ [L,R=301]
+
 # Speed settings for Apache (needs mod_deflate, mod_expires and mod_headers; each block is skipped if the module is missing)
 
 # Compress text files before sending
